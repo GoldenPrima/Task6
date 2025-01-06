@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox  spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.vsu.cs.graphics.LinkedListController">
+    <TextField editable="false" alignment="TOP_CENTER" fx:id="linkedListField"/>
+    <HBox spacing="20">
+        <Button text="add" onAction="#addAction" prefWidth="60"/>
+        <Label text="i:"/>
+        <TextField alignment="TOP_CENTER" fx:id="addIndexField" prefWidth="30"/>
+        <Label text="el:"/>
+        <TextField alignment="TOP_CENTER" fx:id="addElementField" prefWidth="30"/>
+        <Button text="Clear" onAction="#clearAction" prefWidth="60"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="remove" onAction="#removeAction" prefWidth="60"/>
+        <Label text="i:"/>
+        <TextField alignment="TOP_CENTER" fx:id="removeIndexField" prefWidth="30"/>
+        <Label text="el:"/>
+        <TextField alignment="TOP_CENTER" fx:id="removeElementField" prefWidth="30"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="set" onAction="#setAction" prefWidth="60"/>
+        <Label text="i:"/>
+        <TextField alignment="TOP_CENTER" fx:id="setIndexField" prefWidth="30"/>
+        <Label text="el:"/>
+        <TextField alignment="TOP_CENTER" fx:id="setElementField" prefWidth="30"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="get" onAction="#getAction" prefWidth="60"/>
+        <Label text="i:"/>
+        <TextField alignment="TOP_CENTER" fx:id="getIndexField" prefWidth="30"/>
+        <Label text="el:"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="getElementField" prefWidth="30"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="contains" onAction="#containsAction" prefWidth="70"/>
+        <Label text="el:"/>
+        <TextField alignment="TOP_CENTER" fx:id="containsElementField" prefWidth="30"/>
+        <Label text="ans:"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="containsAnswerField" prefWidth="50"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button disable="true" text="size" prefWidth="60"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="sizeField" prefWidth="40"/>
+        <Button text="isEmpty" onAction="#isEmptyAction" prefWidth="60"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="isEmptyField" prefWidth="50"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="addAll" onAction="#addAllAction" prefWidth="80"/>
+        <TextField alignment="TOP_CENTER" fx:id="addAllField" prefWidth="160"/>
+        <Label text="i:"/>
+        <TextField alignment="TOP_CENTER" fx:id="addAllIndexField" prefWidth="20"/>
+    </HBox>
+    <HBox spacing="20">
+        <Button text="reversed" onAction="#reversedAction" prefWidth="80"/>
+        <TextField editable="false" alignment="TOP_CENTER" fx:id="reversedField" prefWidth="225"/>
+    </HBox>
+</VBox>
